@@ -1,24 +1,65 @@
 form div {
   padding: 5px;
 }
-form button {
-  margin-top: 10px;
-}
-form button:disabled {
+form .button:disabled {
   background-color: gray;
+  cursor:default;
 }
 form label {
   font-weight: bold;
 }
 input, textarea {
-  width: 270px;
+  width: 200px;
   height: 30px;
   margin: 5px 0;
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  font-size: 1em;
 }
 textarea {
   height: 100px;
+  height: 200px;
   resize: vertical;
+}
+
+/* media queries mobile first */
+@media (min-width: 400px) {
+  input, textarea {
+    width: 300px;
+  }
+  .container textarea {
+    height: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .container h1 {
+    font-size: 2.5em;
+  }
+  .container h2 {
+    font-size: 2em;
+  }
+  .container h3 {
+    font-size: 1.5em;
+  }
+  .container p {
+    font-size: 1em;
+  }
+  .container a {
+    font-size: 1em;
+  }
+  .container button {
+    font-size: 1em;
+  }
+  .container textarea {
+    height: 300px;
+  }
+  .container input, .container textarea {
+    width: 500px;
+    /* increase font-size */
+    font-size: 1em;
+  }
 }

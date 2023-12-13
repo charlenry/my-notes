@@ -1,6 +1,7 @@
 .notes {
   width: 80%;
   margin: 20px auto;
+  padding: 0px;
 }
 .notes li {
   margin-bottom: 20px;
@@ -14,7 +15,12 @@ li button {
   width: 100%;
   border: none;
   background: none;
-  padding: 20px;
+  padding: 15px;
   cursor: pointer;
 }
 
+/* chznge yhe color of the button on hover*/
+li button:hover {
+  background-color: #e6f16b;
+  border-radius: 15px;
+}

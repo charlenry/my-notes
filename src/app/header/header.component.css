@@ -5,3 +5,10 @@ h1 {
   text-align: center;
   font-size: 24pt;
 }
+
+/* media queries mobile first */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 36pt;
+  }
+}

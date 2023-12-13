@@ -33,16 +33,6 @@ a {
 h2 {
   font-size: 18pt;
 }
-.button {
-  display: inline-block;
-  padding: 10px;
-  border-radius: 20px;
-  background-color: #007bff;
-  color: #fff;
-  font-size: 12pt;
-  border: none;
-  text-decoration: none;
-}
 nav {
   text-align: center;
 }
@@ -75,16 +65,28 @@ label span {
   color: gray;
   font-size: 13pt;
 }
-nav button {
-  width: auto;
+.button {
   display: inline-block;
   padding: 10px;
   margin: 5px;
-  border-radius: 20px;
+  border-radius: 15px;
   background-color: #007bff;
   color: #fff;
   font-size: 12pt;
   border: none;
   text-decoration: none;
   cursor: pointer;
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: #0568d3;
+  border-radius: 15px;
+}
+pre {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
